@@ -1,0 +1,22 @@
+
+
+@media only screen and (max-width: 1020px) {
+  .homecard-item{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .homecard-item img{
+    margin-top: 30px;
+    width: 40%;
+    aspect-ratio: 1/1;
+  }
+  .homecard-item  .carditem-text{
+    max-width: 600px;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+}

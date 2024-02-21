@@ -1,13 +1,214 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+*{
+  list-style: none;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Outfit', sans-serif;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.home-page {
+  width: 100%;
+}
+
+.home-page .bg-pic{
+  background: url("./images/bg-blog.png") center center/ cover no-repeat;
+  height: 60vh;
+  padding: 20px;
+}
+
+.home-page .bg-pic p {
+  text-align: left;
+  max-width: 400px;
+  text-align: justify;
+  color: #fff;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+/* HomeCard styles */
+.homecard-container{
+  margin: 10px 0 0 40px;
+}
+
+.homecard-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 60px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+}
+.homecard-item img{
+  width: 15%;
+  aspect-ratio: 1/1;
+}
+
+.homecard-item  .carditem-text{
+  max-width: 600px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.homecard-item  .carditem-text a{
+  background: #456756;
+  padding: 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.homecard-item  .carditem-text p{
+  line-height: 1.4;
+}
+
+/* ProductImages styles */
+
+.product-images,  .about-blog{
+  
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+  padding: 20px;
+  margin: 30px 0;
+}
+.product-images .images, .about-blog .images{
+  /* border: solid red; */
+  width: 200px;
+  aspect-ratio: 1.2/1;
+  box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.2);
+  padding: 10px;
+}
+
+.product-images .images img, .about-blog .images img{
+  width: 150px;
+  aspect-ratio: 1/1;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.product-images a{
+  align-self:center;
+  padding: 10px;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+}
+/*Blog styles  */
+.img-blog-display{
+  background-color: rgb(94, 24, 24, .4);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+
+ 
+} 
+.img-blog-display .image{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+color: #fff;
+max-width: 600px;
+gap: 30px;
+box-shadow: 2px 2px 10px rgba(20, 20, 20, 0.2);
+padding: 20px;
+
+}
+.img-blog-display .image img{
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+
+.img-blog-display a{
+  padding: 10px;
+  background-color: #456756;
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* About styles */
+
+.about-blog{
+  flex-wrap: wrap;
+}
+/* Instagram Styles */
+.insta-blog{
+  display: flex;
+  /* min-height: 100vh; */
+  align-items: center;
+  justify-content: center;
+}
+.insta-blog .insta-product{
+  margin: 50px 0;
+  box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  gap: 20px;
+  padding: 20px;
+  text-align: justify;
+  background-color: #f0f0f0;
+}
+.insta-blog .insta-product img{
+  width: 40%;
+  aspect-ratio: 1/1;
+  box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.2);
+  padding: 10px;
+
+}
+
+.insta-product .cost-rating{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.insta-blog .insta-product p{
+  box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.2);
+  padding: 8px;
+  line-height: 1.3;
+}
+.insta-blog .insta-product a {
+  padding: 10px;
+  background-color: chocolate;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Footer Styles  */
+
+.footer-item{
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  box-shadow: 2px 2px 5px rgba(20, 20, 20, 0.2);
+}
+
+.footer-item .footer-socials{
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .product-images{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  padding: 20px;
+  margin: 30px 0;
+  }
 }
